@@ -1,0 +1,11 @@
+
+
+<h3> {{dbProduct.title}} </h3>
+<p> description:{{dbProduct.description}} </p>
+<p> price: ${{dbProduct.price}} clp </p>
+
+<form action="/api/carts/{{cart}}/products/{{pid}}" method="post">
+    <label for="quantity">select cuantity</label>
+    <input type="number" name="quantity" id="quantity">
+    <button type="submit">Add to cart </button>
+</form>
